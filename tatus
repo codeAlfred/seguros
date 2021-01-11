@@ -1,0 +1,23 @@
+[33mcommit 4a7c1a162ac0ca409bf45927f71226ed366493cc[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: luis muñoz <munozrodas.luisalfredo@gmail.com>
+Date:   Sun Jan 3 17:44:14 2021 -0500
+
+    Obteniendo la Fecha y la Hora del sistema, para colocarlo en los encabezados
+
+[33mcommit 732cc87b0382570ca10de32061d025a98e6a3b6b[m
+Author: luis muñoz <munozrodas.luisalfredo@gmail.com>
+Date:   Sat Jan 2 23:37:30 2021 -0500
+
+    estilizando el margen del pdf y las imagenes
+
+[33mcommit 2f6a33f875d7df9bd476a872dc92dfa8862d1fa5[m
+Author: luis muñoz <munozrodas.luisalfredo@gmail.com>
+Date:   Sat Jan 2 22:01:37 2021 -0500
+
+    subiendo todos los cambios efectuados, solo falta mejorar los estilos del pdf y autogenerar la fecha, el mes de vencimiento y el codigo del seguro
+
+[33mcommit a5623b15044dc0d6ee6daef156f672648be55b9d[m
+Author: luis muñoz <munozrodas.luisalfredo@gmail.com>
+Date:   Fri Jan 1 17:17:58 2021 -0500
+
+    initial commit

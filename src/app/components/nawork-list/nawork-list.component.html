@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-2 mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <form class="row d-flex justify-content-between aling-items">
+                        <label for="dni" class="visually-hidden" >INGRESE DNI:</label>
+                        <input type="text" class="form-control" name="dni" [(ngModel)]="employe.dni" placeholder="DNI" autofocus>
+                        <button  class="btn btn-primary mt-3 btn-block" (click)="getEmploye(employe.dni)"><i class="fas fa-search m-2" size:5x></i>SEARCH EMPLOYEE</button>
+                      </form>
+                </div>
+            </div>
+             
+            
+        </div>
+        
+        <!-- PRE VISUALIZACION  -->
+        <div class="col-md-4 mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <p>Nombres y Apellidos: </p>
+                    <h5>{{employe.apellido_paterno }} {{employe.apellido_materno }} {{employe.nombres}}</h5>
+                    <p>DNI: </p>
+                    <h5>{{employe.dni}}</h5>
+                    <button  class="btn btn-success mt-3 btn-block" (click)="addEmployes(employe.apellido_paterno,employe.apellido_materno, employe.nombres, employe.dni)"><i class="fas fa-user-plus m-2" size:5x></i>ADD EMPLOYEE</button>
+                </div>
+            </div>
+        </div>
+        
+    
+    </div>
+    
+    
+</div>
+
+
+
+<!-- TABLA PARA LISTAR LOS TRABAJADORES -->
+<div class="container">
+    <table class="table mt-5">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Apellidos y Nombres</th>
+            <th scope="col">DNI</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let work of worked; index as i">
+            <th scope="row">{{i+1}}</th>
+            <td>{{work[0]}}</td>
+            <td>{{work[1]}}</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+      
+</div>
+
+
+<app-generar-pdf [work]="worked" > </app-generar-pdf>
