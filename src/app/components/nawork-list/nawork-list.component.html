@@ -5,7 +5,7 @@
                 <div class="card-body">
                     <form class="row d-flex justify-content-between aling-items">
                         <label for="dni" class="visually-hidden" >INGRESE DNI:</label>
-                        <input type="text" class="form-control" name="dni" [(ngModel)]="employe.dni" placeholder="DNI" autofocus>
+                        <input type="number" class="form-control" name="dni" [(ngModel)]="employe.dni" placeholder="DNI" autofocus>
                         <button  class="btn btn-primary mt-3 btn-block" (click)="getEmploye(employe.dni)"><i class="fas fa-search m-2" size:5x></i>SEARCH EMPLOYEE</button>
                       </form>
                 </div>
